@@ -72,6 +72,11 @@ if (!pkg.dsh?.client || pkg.dsh.client.platform !== 'web') bad('dsh.client.platf
 else ok('dsh.client 配置正确');
 if (!pkg.files || !pkg.files.includes('cordis.patch.yml')) bad('files 白名单缺少 cordis.patch.yml');
 else ok('files 白名单包含补丁文件');
+if (!pkg.files || !pkg.files.includes('README.md') || !pkg.files.includes('README.en.md')) {
+  bad('files 白名单缺少 README.md / README.en.md（对应语言的 README 将不进发布包）');
+} else {
+  ok('files 白名单包含中英 README');
+}
 
 // 6. 展示文案读取链（对应 dsh 的 readPluginMeta，已实测 0.1.7-alpha.1）：
 //    文案唯一来源 = locale/<lang>.json 的 meta.title / meta.description；

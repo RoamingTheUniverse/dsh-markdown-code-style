@@ -1,5 +1,7 @@
 # DeepSeek Harness Markdown Code Style
 
+**中文** | [English](./README.en.md)
+
 [![npm version](https://img.shields.io/npm/v/dsh-markdown-code-style.svg)](https://www.npmjs.com/package/dsh-markdown-code-style)
 
 为 DeepSeek Harness（dsh）会话消息中 markdown 围栏代码块重新设计样式的
