@@ -1,0 +1,6 @@
+# Bundle patch 层：该行把本 package 的主入口作为 Host 半部加载（空实现）；
+# `dsh.client` 声明让 Web 应用加载 ./client 作为浏览器半部，由它通过
+# ctx.effect 安装代码块样式表。
+- insert:
+    - id: dsh-markdown-code-style
+      name: 'dsh-markdown-code-style'

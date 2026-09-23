@@ -1,0 +1,6 @@
+# 依赖目录（本包零依赖；本地试验安装产生的目录不入库）
+node_modules/
+# npm pack 产物
+*.tgz
+# macOS
+.DS_Store

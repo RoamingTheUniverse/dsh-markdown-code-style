@@ -1,0 +1,51 @@
+{
+  "name": "dsh-markdown-code-style",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "为会话消息中 markdown 渲染的代码块重新换肤：卡片外观、语言标签头部、复制按钮工具栏、行号、易读的字号与主题化滚动条，同时完整保留语法高亮、复制、流式渲染与吸顶标题栏等原有功能。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "markdown",
+    "code-block",
+    "theme",
+    "syntax-highlighting"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoamingTheUniverse/dsh-markdown-code-style.git"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "node scripts/check.js",
+    "prepublishOnly": "node scripts/check.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
