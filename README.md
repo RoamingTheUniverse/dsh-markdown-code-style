@@ -4,6 +4,8 @@
 
 [![npm version](https://img.shields.io/npm/v/dsh-markdown-code-style.svg)](https://www.npmjs.com/package/dsh-markdown-code-style)
 
+![代码块效果预览：语言标签、换行开关、复制按钮与行号](https://raw.githubusercontent.com/RoamingTheUniverse/dsh-markdown-code-style/main/code-block.png)
+
 为 DeepSeek Harness（dsh）会话消息中 markdown 围栏代码块重新设计样式的
 **插件**。它不重写渲染组件，而是通过组件文档化的公共钩子整体换肤，因此除样式
 之外的原有行为全部保留：

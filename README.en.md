@@ -4,6 +4,8 @@
 
 [![npm version](https://img.shields.io/npm/v/dsh-markdown-code-style.svg)](https://www.npmjs.com/package/dsh-markdown-code-style)
 
+![Code block preview: language label, wrap toggle, copy button, and line numbers](https://raw.githubusercontent.com/RoamingTheUniverse/dsh-markdown-code-style/main/code-block.png)
+
 A **plugin** that redesigns the style of fenced code blocks rendered from
 markdown in DeepSeek Harness (dsh) conversation messages. It does not rewrite
 the rendering component — instead it re-skins the component through its
