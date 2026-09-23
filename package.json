@@ -1,6 +1,6 @@
 {
   "name": "dsh-markdown-code-style",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "为会话消息中 markdown 渲染的代码块重新换肤：卡片外观、语言标签头部、复制按钮工具栏、行号、易读的字号与主题化滚动条，同时完整保留语法高亮、复制、流式渲染与吸顶标题栏等原有功能。",
   "keywords": [
